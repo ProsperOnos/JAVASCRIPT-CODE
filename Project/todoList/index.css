@@ -1,0 +1,59 @@
+.container{
+    width: 90%;
+    margin: 40px auto;
+}
+
+form{
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.todoInput{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 2px solid green;
+}
+
+#formBtn{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+#err{
+    font-weight: 900;
+    color: red;
+    text-align: center;
+}
+
+#todos{
+    list-style-type: none;
+    width: 70%;
+    margin: 20px auto;
+}
+
+#todos li{
+    border-bottom: 2px solid green;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close{
+    float: right;
+    background: red;
+    color: white;
+    font-weight: bolder;
+    border: none;
+}
+
+.cancel{
+    text-decoration: line-through;
+}

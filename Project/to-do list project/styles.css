@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+.to-do_app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    margin: 100px auto 20px ;
+    padding: 40px 30px 70px;
+    gap: 10px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgray;
+    border-radius: 25px;
+}
+
+input{
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 15px;
+}
+
+.sub_btn{
+    background-color: purple;
+    padding: 15px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+.task{
+    list-style: none;
+    border-bottom: 2px solid purple;
+    margin-top: 20px;
+}
+
+.remove{
+    display: flex;
+    justify-content: center;
+    float: right;
+    font-weight: bolder;
+    background-color: red;
+    border: none;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    height: 24px;
+    width: 24px;
+    line-height: 17px;
+    border-radius: 50%;
+}
+
+
+.complete{
+    text-decoration: line-through;
+    
+}
+
+#error{
+    text-align: center;
+    color: red;
+}

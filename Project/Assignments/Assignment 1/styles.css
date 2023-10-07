@@ -1,0 +1,24 @@
+/* #texts{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.text{
+    font-size: 100px;
+    user-select: none;
+    cursor: pointer;
+    display: none;
+}
+
+.active{
+    display: block;
+}

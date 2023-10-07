@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.modal_btn{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modal_background{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background-color: rgba(122, 117, 117, 0.2);
+    display: none;
+    animation: modal 2s ease-in-out;
+}
+
+.modal_content{
+    width: 60%;
+    margin: 10% auto;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.modal_header{
+    padding: 15px 15px;
+    font-size: 20px;
+}
+
+.modal_header span{
+    float: right;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.modal_body{
+    padding: 30px 15px;
+    border-bottom: 1px solid rgba(128, 123, 123, 0.2);
+    border-top: 1px solid rgba(128, 123, 123, 0.2);
+}
+
+.modal_footer{
+    padding: 15px 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* animation for modal */
+@keyframes modal{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}

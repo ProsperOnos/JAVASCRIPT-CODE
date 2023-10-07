@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.p_slider{
+    height: 100vh;
+    border: 1px solid black;
+    position: relative;
+}
+
+.p_slide{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.p_slide-content{
+    position: absolute;
+    bottom: 0;
+    width: 600px;
+    left: -600px;
+    background:linear-gradient(135deg, #153677, #4e085f);;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+.p_slide.active{
+    opacity: 1;
+}
+.p_slide.active .p_slide-content{
+    transform: translateX(600px);
+    opacity: 1;
+}
+
+.buttons button{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    background: purple;
+}
+
+#leftBtn{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+}
+
+#rightBtn{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+}
+
+.p_slide:nth-child(1){
+    background: url('p_imgs/food\ 1.avif') no-repeat center top/cover;
+}
+
+.p_slide:nth-child(2){
+    background: url('p_imgs/food\ 2.jpg') no-repeat center top/cover;
+}
+
+.p_slide:nth-child(3){
+    background: url('p_imgs/food3.avif') no-repeat center top/cover;
+}
+
+.p_slide:nth-child(4){
+    background: url('p_imgs/food4.jpg') no-repeat center top/cover;
+}
+
+.p_slide:nth-child(5){
+    background: url('p_imgs/food\ 5.jpg') no-repeat center top/cover;
+}

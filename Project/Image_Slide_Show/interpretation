@@ -1,0 +1,33 @@
+// Here a variable called images is decleared storing the path to the images to be looped through these paths are arranged in an array 
+let images = ['./imgs/food 1.avif', './imgs/food 2.jpg', './imgs/food3.avif', './imgs/food4.jpg', './imgs/food 5.jpg'];
+
+// Here a variable called i storing the index number of the first path in the images array is stored here
+let i = 0;
+
+// Here a function is used to store the code until when it is invoked 
+function changeImage(){
+
+    // Here a variable is decleared called image storing the element grabed from out HTML document using querySelector it grabs the image element
+    const image = document.querySelector('#img');
+
+    // Here the image variable containing the element is given the source (src) attribute and assigned to the first path of the images array
+    image.src = images[i];
+
+    // Here a conditional statement is used saying that if i which stores an index value of 0 (the first path in the images array) is less than images.length the length of the images array minus one (-1) which make it equal to the numbering of content of an array by JavaScript let the index number increase by one (1) 
+    if(i < images.length -1){
+        i++
+    }
+
+    // Here the else statement is used saying that when it is not less than the array length minus one (-1) it should be assigned to a valued of zero, the ensures that the code keep on running by makeing it less than the length of the array
+    else{
+        i = 0;
+    }
+
+    // Here the setTimeout property os used to call the name of the function containing the codes to be invoked and giving them a time of two seconds (2) for each line of code to take action
+    setTimeout(changeImage, 2000)
+};
+
+// here the code is invoked by calling it function name.
+changeImage();
+
+// translate this solution to english line by line

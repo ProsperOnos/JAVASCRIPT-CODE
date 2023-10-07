@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;1,500&family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-2);
+}
+
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+:root{
+    --font-1: 'Open Sans', sans-serif;
+    --font-2: 'Poppins', sans-serif;
+    --font-3: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100%;  
+}
+
+.container_div{
+    display: grid;
+    grid-template-columns: 23% 81%;
+    width: 95%;
+    margin: 0 auto;
+    height: 100%;
+    position: fixed;
+    left: 5px;
+}
+
+/* menu starts */
+.menu_content{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding-top: 30px;
+    overflow-y:scroll;
+    margin-top: 10px;
+    height: 100%;
+    width: 19%;
+    margin-left: 40px;
+}
+
+.logo{
+    font-weight: bolder;
+    color: blue;
+}
+
+span{
+    color: red;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+ul li a{
+    color: black;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    align-items: center;
+    height: 10px;
+    font-weight: bolder;
+}
+
+i{
+    font-size: 20px;
+}
+
+.menu_links{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* menu ends */
+
+/* content header starts */
+.content_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile_content{
+    display: flex;
+    height: 89px;
+    align-items: center;
+}
+
+.profile_content p{
+    color: blue;
+    padding: 20px;
+}
+
+#profile_img{
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    object-fit: cover;
+}
+
+/* content header ends */
+
+/* Content body starts */
+.content_image-bg{
+    background: url('img/Business-Finance\ image.jpg') center top/cover;
+    height: 600px;
+    width: 99%;
+    position: relative;
+}
+
+
+.content_div{
+    background-color: rgb(249, 249, 249);
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-top: 10px;
+    overflow: auto;
+}
+
+.account_details{
+    background-color: white;
+    color: blue;
+    font-weight: 600;
+    width: 200px;
+    font-size: 12px;
+    position: absolute;
+    bottom: 169px;
+}
+
+.content_image-bg--text{
+    background-color: blue;
+    color: white;
+    font-size: 13px;
+    border-radius: 10px;
+    width: 70%;
+    padding: 5px 50px 70px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* content body ends */
+
+/* form starts */
+.content_form{
+    box-shadow: 1px 1px 9px 1px lightgray;
+    width: 60%;
+    border-radius: 5px;
+    margin: 70px auto;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.input_fields{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid blue;
+    border-radius: 3px;
+    background-color: transparent;
+    outline: none;
+}
+
+table{
+    width: 96%;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: left;
+    border-collapse: collapse;
+    margin-bottom: 100px;
+}
+
+table thead th{
+    padding: 10px;
+}
+
+table tr td{
+    padding: 10px;
+}
+
+table thead{
+    background-color: rgb(198, 244, 244);
+}
+
+table tbody tr:nth-child(1){
+    background-color: rgb(50, 197, 255);
+}
+
+table tbody tr:nth-child(2){
+    background-color: rgb(198, 244, 244);
+}
+
+table tbody tr:nth-child(3){
+    background-color: rgb(50, 197, 255);
+}
+
+table tbody tr:nth-child(4){
+    background-color: rgb(198, 244, 244);
+}
+
+table tbody tr:nth-child(5){
+    background-color: rgb(50, 197, 255);
+}
+/* form ends */
+
+
+
+
+
+
+

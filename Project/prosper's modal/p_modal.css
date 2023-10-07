@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* 
+
+font-family: 'Lato', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.p_m-bg{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(83, 79, 79, 0.5);
+    animation: p_modal 2s ease-in-out;
+    display: none;
+}
+
+@keyframes p_modal{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.p_m-content{
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 20px;
+    width: 25%;
+    max-width: 350px;
+    min-width: 350px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin: 150px auto;
+}
+
+.p_m-body form{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+#email{
+    margin: 0px 15px 0px;
+    padding: 9px;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+    outline: none;
+}
+
+#password{
+    border: none;
+    outline: none;
+    width: 80%;
+}
+
+.p_m-body form button{
+    color: white;
+    margin: 0px 15px 0px;
+    padding: 9px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(2, 186, 2);
+}
+
+
+.p_m-heading :first-child{
+    position: absolute;
+    top: 0;
+    right: 9px;
+    font-size: 25px;
+    padding-top: 6px;
+    padding-bottom: 13px;
+    cursor: pointer;
+}
+
+.p_m-heading :last-child{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#profile_pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    right: 113px;
+}
+
+.p_m-footer{
+    background-color: rgb(202, 202, 202);
+    padding: 15px 0px 15px;
+    border-radius: 0px 0px 10px 10px ;
+    object-fit: cover;
+}
+
+.p_m-footer p{
+    text-align: center;
+    color: blue;
+    object-fit: cover;
+}
+
+h4{
+    margin: 10px 10px 2px ; 
+}
+
+#log_btn{
+    padding: 10px;
+    color: white;
+    background-color: blue;
+    border: none;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.password_div{
+    display: flex;
+    align-items: center;
+    margin: 0px 15px 0px;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+    outline: none;
+    gap: 20px;
+    padding: 9px;
+}
+
+#eye_icon{
+    width: 40px;
+    height:16px;
+    object-fit: contain;
+}

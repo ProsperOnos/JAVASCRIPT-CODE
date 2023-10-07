@@ -1,0 +1,16 @@
+#faces{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.face{
+    font-size: 100px;
+    display: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.active{
+    display: block;
+}
